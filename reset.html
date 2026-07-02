@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+</head>
+<body>
+    <header>
+          <div class="header-top">
+            <p class="tran"><img src="./images/log1.png" alt="" class="logo"></p>
+            <div class="hamburger" id="hamburger">&#9776</div>
+          </div>
+          <nav class="new">
+            <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="about.html">ABOUT US</a></li>
+              <li><a href="service.html">SERVICES</a></li>
+              <li><a href="testimonial.html">TESTIMONIALS</a></li>
+              <li><a href="login.html">LOGIN</a></li>
+              <li><a href="https://wa.me/2348135458426?text=Hello%2C%20my%20name%20is%20" target="_blank">CONTACT US</a></li>
+              <li><a href="ai.html">AI ASSISTANT</a></li>
+            </ul>
+          </nav>
+       </header>
+       <nav class="side-menu" id="sideMenu">
+          <div class="close-btn" id="closeBtn">&times;</div>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="service.html">SERVICES</a></li>
+            <li><a href="testimonial.html">TESTIMONIALS</a></li>
+            <li><a href="login.html">LOGIN</a></li>
+            <li><a href="https://wa.me/2348135458426">CONTACT US</a></li>
+            <li><a href="ai.html">AI ASSISTANT</a></li>
+          </ul>
+       </nav>
+  <div class="container">
+    <div class="form-box">
+      <h2>Reset Password</h2>
+      <p>Enter your new password below.</p>
+
+      <form action="#" method="post">
+        <div class="input-group">
+          <label for="newPassword">New Password</label>
+          <input type="password" id="newPassword" name="newPassword" placeholder="Enter new password" required>
+        </div>
+
+        <div class="input-group">
+          <label for="confirmPassword">Confirm Password</label>
+          <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm new password" required>
+        </div>
+        
+        <button type="submit" class="btn">Reset Password</button>
+        
+        <p class="back-login">
+          Back to <a href="login.html">Login</a>
+        </p>
+      </form>
+    </div>
+  </div>
+    <script>
+         const hamburger =
+         document.getElementById("hamburger");
+         const menu = 
+         document.getElementById("sideMenu");
+         const closeBtn = 
+         document.getElementById("closeBtn");
+          hamburger.addEventListener("click",()=> {
+            menu.classList.toggle("show");
+          });
+          closeBtn.addEventListener("click",()=>{
+            sideMenu.classList.remove("show");
+          });
+
+       </script>
+</body>
+</html>

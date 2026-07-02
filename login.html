@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/shared.css">
+</head>
+<body>
+    <header>
+          <div class="header-top">
+            <p class="tran"><img src="./images/log1.png" alt="EnRoute logo" class="logo"></p>
+            <div class="hamburger" id="hamburger">&#9776;</div>
+          </div>
+          <nav class="new show" id="mobileMenu">
+            <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="about.html">ABOUT US</a></li>
+              <li><a href="service.html">SERVICES</a></li>
+              <li><a href="testimonial.html">TESTIMONIALS</a></li>
+              <li><a class="active" href="login.html">LOGIN</a></li>
+              <li><a href="https://wa.me/2348135458426?text=Hello%2C%20my%20name%20is%20" target="_blank">CONTACT US</a></li>
+              <li><a href="ai.html">AI ASSISTANT</a></li>
+            </ul>
+          </nav>
+       </header>
+       <nav class="side-menu" id="sideMenu">
+          <div class="close-btn" id="closeBtn">&times;</div>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="service.html">SERVICES</a></li>
+            <li><a href="testimonial.html">TESTIMONIALS</a></li>
+            <li><a class="active" href="login.html">LOGIN</a></li>
+            <li><a href="https://wa.me/2348135458426">CONTACT US</a></li>
+            <li><a href="ai.html">AI ASSISTANT</a></li>
+          </ul>
+       </nav>
+       <section class="login-page">
+         <form action="login.php" method="post" name="loginForm" class="login-card">
+          <div class="login-icon">🔐</div>
+          <h1>Welcome Back</h1>
+          <p class="login-subtitle">Secure access to your EnRoute bookings</p>
+          <div class="input-field">
+            <span>👤</span>
+            <input type="text" placeholder="Username">
+          </div>
+          <div class="input-field">
+            <span>🔒</span>
+            <input type="password" placeholder="Password">
+          </div>
+          <button type="submit">Login</button>
+          <p class="helper">Don't have an account? <a href="#" id="signUpLink">Sign up now</a></p>
+          <a href="forgot.html" class="forgot-link">Forgot Password?</a>
+         </form>  
+        </section>
+        <div id="termsModal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="closeModal">&times;</span>
+                <h2>Terms and Conditions</h2>
+                <div class="terms-text">
+                    <h3>1. Information We Collect</h3>
+                    <ul>
+                        <li>Your name, email, and phone number (for account and booking purposes).</li>
+                        <li>Payment details (processed securely by trusted providers; not stored on our servers).</li>
+                        <li>Travel preferences and booking history.</li>
+                    </ul>
+
+                    <h3>2. How We Use Your Information</h3>
+                    <ul>
+                        <li>To process bookings and send tickets/confirmations.</li>
+                        <li>To contact you with updates or provide customer support.</li>
+                        <li>To improve our services and personalize your experience.</li>
+                    </ul>
+
+                    <h3>3. Sharing of Data</h3>
+                    <ul>
+                        <li>Booking details are shared only with our travel partners (bus operators, airlines, hotels, etc.) so they can provide your service.</li>
+                        <li>We never sell your personal information to third parties.</li>
+                    </ul>
+
+                    <h3>4. Security</h3>
+                    <ul>
+                        <li>All sensitive data is encrypted and kept secure.</li>
+                        <li>Payments are processed securely by Paystack, Flutterwave, or other trusted gateways.</li>
+                    </ul>
+
+                    <h3>5. Your Rights</h3>
+                    <ul>
+                        <li>You can request to update or delete your account/data at any time.</li>
+                        <li>You can unsubscribe from marketing emails or SMS at any time.</li>
+                    </ul>
+
+                    <h3>6. Consent</h3>
+                    <p>
+                      By creating an account, you agree to these terms and conditions.
+                    </p>
+                </div>
+
+                <div class="checkbox-section">
+                    <input type="checkbox" id="agreeCheckbox" required>
+                    <label for="agreeCheckbox">I agree to all Terms and Conditions</label>
+                </div>
+                <button id="continueBtn" disabled>Continue to Sign Up</button>
+            </div>
+        </div>
+<footer class="site-footer" id="footer">
+  <div class="footer-grid">
+    <div class="footer-block"><h4>EnRoute</h4><p>Modern travel booking for buses, flights, and seamless journeys.</p></div>
+    <div class="footer-block"><h4>Quick Links</h4><div class="footer-links"><a href="index.html">Home</a><a href="about.html">About</a><a href="service.html">Services</a><a href="testimonial.html">Testimonials</a></div></div>
+    <div class="footer-block"><h4>Contact</h4><p>Email: support@enroute.com</p><p>Phone: +234 813 545 8426</p><div class="social-links">📱 🌐 ✉️</div></div>
+    <div class="footer-block"><h4>Stay Connected</h4><p>Plan your next trip with confidence.</p><a class="back-top" href="#top">Back to Top</a></div>
+  </div>
+</footer>
+<script>
+         const hamburger =
+         document.getElementById("hamburger");
+         const menu = 
+         document.getElementById("sideMenu");
+         const closeBtn = 
+         document.getElementById("closeBtn");
+          hamburger.addEventListener("click",()=> {
+            menu.classList.toggle("show");
+          });
+          closeBtn.addEventListener("click",()=>{
+            sideMenu.classList.remove("show");
+          });
+
+</script>
+<script>
+    const signUpLink = document.getElementById("signUpLink");
+    const modal = document.getElementById("termsModal");
+    const closeModal = document.getElementById("closeModal");
+    const agreeCheckbox = document.getElementById("agreeCheckbox");
+    const continueBtn = document.getElementById("continueBtn");
+
+    // Open modal when clicking "Sign Up Now"
+    signUpLink.addEventListener("click", (e) => {
+        e.preventDefault();
+        modal.style.display = "block";
+    });
+
+    // Close modal when clicking "X"
+    closeModal.addEventListener("click", () => {
+        modal.style.display = "none";
+        window.location.href = "index.html"; // Redirect to homepage
+    });
+
+    // Close modal when clicking outside
+    window.addEventListener("click", (e) => {
+        if (e.target === modal) {
+            modal.style.display = "none";
+            window.location.href = "index.html"; // Redirect to homepage
+        }
+    });
+
+    // Enable button when checkbox is checked
+    agreeCheckbox.addEventListener("change", () => {
+        if (agreeCheckbox.checked) {
+            continueBtn.disabled = false;
+            continueBtn.classList.add("active");
+        } else {
+            continueBtn.disabled = true;
+            continueBtn.classList.remove("active");
+        }
+    });
+
+    // Continue to sign-up page
+    continueBtn.addEventListener("click", () => {
+        if (agreeCheckbox.checked) {
+            window.location.href = "sign.html";
+        }
+    });
+</script>
+
+</body>
+</html>

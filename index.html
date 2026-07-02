@@ -1,0 +1,119 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/shared.css">
+</head>
+<body>
+       <header>
+          <div class="header-top">
+            <p class="tran"><img src="./images/log1.png" alt="EnRoute logo" class="logo"></p>
+            <div class="hamburger" id="hamburger">&#9776;</div>
+          </div>
+          <nav class="new show" id="mobileMenu">
+            <ul>
+              <li><a class="active" href="index.html">HOME</a></li>
+              <li><a href="about.html">ABOUT US</a></li>
+              <li><a href="service.html">SERVICES</a></li>
+              <li><a href="testimonial.html">TESTIMONIALS</a></li>
+              <li><a href="login.html">LOGIN</a></li>
+              <li><a href="https://wa.me/2348135458426?text=Hello%2C%20my%20name%20is%20" target="_blank">CONTACT US</a></li>
+              <li><a href="ai.html">AI ASSISTANT</a></li>
+            </ul>
+          </nav>
+       </header>
+       <nav class="side-menu" id="sideMenu">
+          <div class="close-btn" id="closeBtn">&times;</div>
+          <ul>
+            <li><a class="active" href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="service.html">SERVICES</a></li>
+            <li><a href="testimonial.html">TESTIMONIALS</a></li>
+            <li><a href="login.html">LOGIN</a></li>
+            <li><a href="https://wa.me/2348135458426">CONTACT US</a></li>
+            <li><a href="ai.html">AI ASSISTANT</a></li>
+          </ul>
+       </nav>
+       <section class="hero">
+           <div class="content">
+               <div class="eyebrow">Reliable travel, reimagined</div>
+               <h1>
+                 FROM <span>HERE</span><br>
+                 TO <span>ANYWHERE</span>
+               </h1>
+               <p class="trav">A new way to travel. A better way to arrive with smart booking, smooth journeys, and premium support.</p>
+               <div class="hero-actions">
+                 <a class="btn btn-primary" href="bus.html">Book Ticket</a>
+                 <a class="btn btn-secondary" href="about.html">Learn More</a>
+               </div>
+           </div>
+       </section>
+       <section class="feature-strip">
+         <div class="feature-card">
+           <div class="icon">🚌</div>
+           <h3>Bus Booking</h3>
+           <p>Reserve seats on trusted routes in a few simple steps.</p>
+         </div>
+         <div class="feature-card">
+           <div class="icon">✈️</div>
+           <h3>Flight Booking</h3>
+           <p>Access flexible flight options with a premium booking experience.</p>
+         </div>
+         <div class="feature-card">
+           <div class="icon">💳</div>
+           <h3>Easy Payment</h3>
+           <p>Secure, simple payments that make confirming your travel effortless.</p>
+         </div>
+         <div class="feature-card">
+           <div class="icon">🕒</div>
+           <h3>24/7 Support</h3>
+           <p>Travel help and assistance whenever you need it.</p>
+         </div>
+       </section>
+       <footer class="site-footer" id="footer">
+         <div class="footer-grid">
+           <div class="footer-block">
+             <h4>EnRoute</h4>
+             <p>Modern travel booking for buses, flights, and seamless journeys.</p>
+           </div>
+           <div class="footer-block">
+             <h4>Quick Links</h4>
+             <div class="footer-links">
+               <a href="index.html">Home</a>
+               <a href="about.html">About</a>
+               <a href="service.html">Services</a>
+               <a href="testimonial.html">Testimonials</a>
+             </div>
+           </div>
+           <div class="footer-block">
+             <h4>Contact</h4>
+             <p>Email: support@enroute.com</p>
+             <p>Phone: +234 813 545 8426</p>
+             <div class="social-links">📱 🌐 ✉️</div>
+           </div>
+           <div class="footer-block">
+             <h4>Stay Connected</h4>
+             <p>Plan your next trip with confidence.</p>
+             <a class="back-top" href="#top">Back to Top</a>
+           </div>
+         </div>
+       </footer>
+       <script>
+         const hamburger =
+         document.getElementById("hamburger");
+         const menu = 
+         document.getElementById("sideMenu");
+         const closeBtn = 
+         document.getElementById("closeBtn");
+          hamburger.addEventListener("click",()=> {
+            menu.classList.toggle("show");
+          });
+          closeBtn.addEventListener("click",()=>{
+            sideMenu.classList.remove("show");
+          });
+
+       </script>
+</body>
+</html>

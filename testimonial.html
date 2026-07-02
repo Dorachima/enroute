@@ -1,0 +1,140 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/testimonial.css">
+    <link rel="stylesheet" href="./css/shared.css">
+</head>
+<body>
+       <header>
+          <div class="header-top">
+            <p class="tran"><img src="./images/log1.png" alt="EnRoute logo" class="logo"></p>
+            <div class="hamburger" id="hamburger">&#9776;</div>
+          </div>
+          <nav class="new show" id="mobileMenu">
+            <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="about.html">ABOUT US</a></li>
+              <li><a href="service.html">SERVICES</a></li>
+              <li><a class="active" href="testimonial.html">TESTIMONIALS</a></li>
+              <li><a href="login.html">LOGIN</a></li>
+              <li><a href="https://wa.me/2348135458426?text=Hello%2C%20my%20name%20is%20" target="_blank">CONTACT US</a></li>
+              <li><a href="ai.html">AI ASSISTANT</a></li>
+            </ul>
+          </nav>
+       </header>
+       <nav class="side-menu" id="sideMenu">
+          <div class="close-btn" id="closeBtn">&times;</div>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="service.html">SERVICES</a></li>
+            <li><a class="active" href="testimonial.html">TESTIMONIALS</a></li>
+            <li><a href="login.html">LOGIN</a></li>
+            <li><a href="https://wa.me/2348135458426">CONTACT US</a></li>
+            <li><a href="ai.html">AI ASSISTANT</a></li>
+          </ul>
+       </nav>
+       <section class="testimonial-hero">
+           <div class="hero-copy">
+               <div class="eyebrow">Customer love</div>
+               <h1>Trusted by Thousands of Travelers</h1>
+               <p>Our clients keep choosing EnRoute for stress-free booking, professional support, and smooth travel experiences.</p>
+           </div>
+       </section>
+       <section id="testimonials">
+        <h2>What Our Customers Say</h2>
+        <p class="subtitle">Read genuine feedback from people who booked through our platform.</p>
+
+        <div class="testimonial-shell">
+          <div class="testimonial-container" id="testimonial-container">
+              <div class="testimonial">
+                  <div class="quote">“</div>
+                  <p class="testimonial-text">The booking process felt effortless, and the support team helped me every step of the way.</p>
+                  <div class="testimonial-user">
+                      <div class="avatar">AM</div>
+                      <div class="user-details">
+                          <h4>Amara Okafor</h4>
+                          <p class="user-rating">★★★★★</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="testimonial">
+                  <div class="quote">“</div>
+                  <p class="testimonial-text">I booked my bus ticket in minutes and enjoyed a smooth, reliable trip to my destination.</p>
+                  <div class="testimonial-user">
+                      <div class="avatar">TO</div>
+                      <div class="user-details">
+                          <h4>Tolu Daniels</h4>
+                          <p class="user-rating">★★★★★</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="testimonial">
+                  <div class="quote">“</div>
+                  <p class="testimonial-text">Professional, modern, and easy to use. EnRoute made planning my trip so much easier.</p>
+                  <div class="testimonial-user">
+                      <div class="avatar">CI</div>
+                      <div class="user-details">
+                          <h4>Chika Ibe</h4>
+                          <p class="user-rating">★★★★★</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="testimonial-buttons">
+              <button id="prevBtn">‹</button>
+              <button id="nextBtn">›</button>
+          </div>
+        </div>
+    </section>
+
+    <footer class="site-footer" id="footer">
+      <div class="footer-grid">
+        <div class="footer-block"><h4>EnRoute</h4><p>Modern travel booking for buses, flights, and seamless journeys.</p></div>
+        <div class="footer-block"><h4>Quick Links</h4><div class="footer-links"><a href="index.html">Home</a><a href="about.html">About</a><a href="service.html">Services</a><a href="testimonial.html">Testimonials</a></div></div>
+        <div class="footer-block"><h4>Contact</h4><p>Email: support@enroute.com</p><p>Phone: +234 813 545 8426</p><div class="social-links">📱 🌐 ✉️</div></div>
+        <div class="footer-block"><h4>Stay Connected</h4><p>Plan your next trip with confidence.</p><a class="back-top" href="#top">Back to Top</a></div>
+      </div>
+    </footer>
+
+    <script>
+        const testimonialContainer = document.getElementById("testimonial-container");
+        const prevBtn = document.getElementById("prevBtn");
+        const nextBtn = document.getElementById("nextBtn");
+        let currentIndex = 0;
+        let testimonials = document.querySelectorAll(".testimonial");
+
+        function showTestimonial(index) {
+            testimonialContainer.style.transform = `translateX(-${index * 100}%)`;
+        }
+        nextBtn.addEventListener("click", () => {
+            currentIndex = (currentIndex + 1) % testimonials.length;
+            showTestimonial(currentIndex);
+        });
+
+        prevBtn.addEventListener("click", () => {
+            currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
+            showTestimonial(currentIndex);
+        });
+
+        showTestimonial(currentIndex);
+    </script>
+       <script>
+         const hamburger =
+         document.getElementById("hamburger");
+         const menu = 
+         document.getElementById("sideMenu");
+         const closeBtn = 
+         document.getElementById("closeBtn");
+          hamburger.addEventListener("click",()=> {
+            menu.classList.toggle("show");
+          });
+          closeBtn.addEventListener("click",()=>{
+            sideMenu.classList.remove("show");
+          });
+
+       </script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/forgot.css">
+    <link rel="stylesheet" href="./css/shared.css">
+</head>
+<body>
+    <header>
+          <div class="header-top">
+            <p class="tran"><img src="./images/log1.png" alt="EnRoute logo" class="logo"></p>
+            <div class="hamburger" id="hamburger">&#9776;</div>
+          </div>
+          <nav class="new">
+            <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="about.html">ABOUT US</a></li>
+              <li><a href="service.html">SERVICES</a></li>
+              <li><a href="testimonial.html">TESTIMONIALS</a></li>
+              <li><a href="login.html">LOGIN</a></li>
+              <li><a href="https://wa.me/2348135458426?text=Hello%2C%20my%20name%20is%20" target="_blank">CONTACT US</a></li>
+              <li><a href="ai.html">AI ASSISTANT</a></li>
+            </ul>
+          </nav>
+       </header>
+       <nav class="side-menu" id="sideMenu">
+          <div class="close-btn" id="closeBtn">&times;</div>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="service.html">SERVICES</a></li>
+            <li><a href="testimonial.html">TESTIMONIALS</a></li>
+            <li><a href="login.html">LOGIN</a></li>
+            <li><a href="https://wa.me/2348135458426">CONTACT US</a></li>
+            <li><a href="ai.html">AI ASSISTANT</a></li>
+          </ul>
+       </nav>
+  <div class="container">
+    <div class="form-box">
+      <div class="form-icon">✉️</div>
+      <h2>Forgot Password</h2>
+      <p>Enter your email address below, and we’ll send you a link to reset your password.</p>
+      
+      <form action="#" method="post">
+        <div class="input-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        
+        <button type="submit" class="btn">Send Reset Link</button>
+        
+        <p class="back-login">
+          Remember your password? <a href="login.html">Login here</a>
+        </p>
+      </form>
+    </div>
+  </div>
+    <script>
+         const hamburger =
+         document.getElementById("hamburger");
+         const menu = 
+         document.getElementById("sideMenu");
+         const closeBtn = 
+         document.getElementById("closeBtn");
+          hamburger.addEventListener("click",()=> {
+            menu.classList.toggle("show");
+          });
+          closeBtn.addEventListener("click",()=>{
+            sideMenu.classList.remove("show");
+          });
+
+       </script>
+</body>
+</html>

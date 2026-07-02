@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EnRoute | Flight Booking</title>
+    <link rel="stylesheet" href="./css/bus.css">
+    <link rel="stylesheet" href="./css/shared.css">
+</head>
+<body>
+   <header>
+      <div class="header-top">
+        <p class="tran"><img src="./images/log1.png" alt="EnRoute logo" class="logo"></p>
+        <div class="hamburger" id="hamburger">&#9776;</div>
+      </div>
+      <nav class="new show" id="mobileMenu">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT US</a></li>
+          <li><a href="service.html">SERVICES</a></li>
+          <li><a href="testimonial.html">TESTIMONIALS</a></li>
+          <li><a href="login.html">LOGIN</a></li>
+          <li><a href="https://wa.me/2348135458426?text=Hello%2C%20my%20name%20is%20" target="_blank">CONTACT US</a></li>
+          <li><a href="ai.html">AI ASSISTANT</a></li>
+        </ul>
+      </nav>
+   </header>
+   <nav class="side-menu" id="sideMenu">
+      <div class="close-btn" id="closeBtn">&times;</div>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+        <li><a href="service.html">SERVICES</a></li>
+        <li><a href="testimonial.html">TESTIMONIALS</a></li>
+        <li><a href="login.html">LOGIN</a></li>
+        <li><a href="https://wa.me/2348135458426">CONTACT US</a></li>
+        <li><a href="ai.html">AI ASSISTANT</a></li>
+      </ul>
+   </nav>
+   <section>
+      <h1>Book your next flight with the same confidence as a major airline platform</h1>
+      <p class="page-hero-copy">Choose your destination, cabin class, and travel dates in a polished booking experience built for modern travel.</p>
+      <div class="form-box">
+         <div class="toogle-buttons">
+            <button class="active">BOOK FLIGHT</button>
+            <button>MANAGE TRIP</button>
+         </div>
+         <div class="trip-type">
+            <label><input type="radio" name="trip" value="one" checked>One Way</label>
+            <label><input type="radio" name="trip" value="round">Round Trip</label>
+         </div>
+         <div class="trip-form oneWay">
+            <div class="field-grid">
+               <select>
+                 <option>Select Departure</option>
+                 <option>Lagos</option>
+                 <option>Abuja</option>
+                 <option>Port Harcourt</option>
+                 <option>Kano</option>
+               </select>
+               <select>
+                 <option>Select Destination</option>
+                 <option>Abuja</option>
+                 <option>Lagos</option>
+                 <option>Enugu</option>
+                 <option>Kaduna</option>
+               </select>
+            </div>
+            <div class="field-grid">
+               <input type="date" placeholder="Departure Date">
+               <input type="date" placeholder="Return Date">
+            </div>
+            <div class="field-grid">
+               <select>
+                 <option>Cabin Class</option>
+                 <option>Economy</option>
+                 <option>Business</option>
+                 <option>First Class</option>
+               </select>
+               <select>
+                 <option>Passengers</option>
+                 <option>1 Adult</option>
+                 <option>2 Adults</option>
+                 <option>Family</option>
+               </select>
+            </div>
+            <button class="search">SEARCH FLIGHTS</button>
+         </div>
+      </div>
+   </section>
+   <script>
+     const hamburger = document.getElementById('hamburger');
+     const menu = document.getElementById('sideMenu');
+     const closeBtn = document.getElementById('closeBtn');
+     hamburger.addEventListener('click', () => menu.classList.toggle('show'));
+     closeBtn.addEventListener('click', () => menu.classList.remove('show'));
+   </script>
+</body>
+</html>

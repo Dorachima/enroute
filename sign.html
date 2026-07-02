@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/sign.css">
+</head>
+<body>
+    <header>
+          <div class="header-top">
+            <p class="tran"><img src="./images/log1.png" alt="" class="logo"></p>
+            <div class="hamburger" id="hamburger">&#9776;</div>
+          </div>
+          <nav class="new show" id="mobileMenu">
+            <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="about.html">ABOUT US</a></li>
+              <li><a href="service.html">SERVICES</a></li>
+              <li><a href="testimonial.html">TESTIMONIALS</a></li>
+              <li><a href="login.html">LOGIN</a></li>
+              <li><a href="https://wa.me/2348135458426?text=Hello%2C%20my%20name%20is%20" target="_blank">CONTACT US</a></li>
+              <li><a href="ai.html">AI ASSISTANT</a></li>
+            </ul>
+          </nav>
+       </header>
+       <nav class="side-menu" id="sideMenu">
+          <div class="close-btn" id="closeBtn">&times;</div>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="service.html">SERVICES</a></li>
+            <li><a href="testimonial.html">TESTIMONIALS</a></li>
+            <li><a href="login.html">LOGIN</a></li>
+            <li><a href="https://wa.me/2348135458426">CONTACT US</a></li>
+            <li><a href="ai.html">AI ASSISTANT</a></li>
+          </ul>
+       </nav>
+       <section>
+         <form action="sign.php" method="post" name="loginForm">
+          <div class="sign">
+            <h1>SIGN UP</h1>
+            <select name="emptitle" id="emptitle">
+            <option value=""readonly>Select a title</option>
+            <option value="Mr">Mr</option>
+            <option value="Mrs">Mrs</option>
+            <option value="Miss">Miss</option>
+            <option value="Dr">Dr</option>
+            <option value="Prof">Prof</option>
+            </select>
+            <br>
+            <input type="text" placeholder="First name">
+            <br>
+            <input type="text" placeholder="Middle name">
+            <br>
+            <input type="text" placeholder="Last name">
+            <br>
+            <select name="gender" id="gender">
+            <option value=""readonly>Gender</option>
+            <option value="Mr">Male</option>
+            <option value="Mrs">Female</option>
+            <br>
+            <input type="email" name="" id="" placeholder="Email">
+            <br>
+            <input type="number" name="" id="" placeholder="Phone number">
+            <br>
+            <input type="password" name="" id="" placeholder="Password">
+            <br>
+            <input type="password" placeholder="Re-enter Password">
+            <br>
+            <button>Sign up</button>
+            <p>Have an account? <a href="login.html">Login here</a></p>
+          </div>
+         </form>  
+        </section>
+       <script>
+         const hamburger =
+         document.getElementById("hamburger");
+         const menu = 
+         document.getElementById("sideMenu");
+         const closeBtn = 
+         document.getElementById("closeBtn");
+          hamburger.addEventListener("click",()=> {
+            menu.classList.toggle("show");
+          });
+          closeBtn.addEventListener("click",()=>{
+            sideMenu.classList.remove("show");
+          });
+
+       </script>
+</body>
+</html>

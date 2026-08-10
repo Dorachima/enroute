@@ -111,7 +111,7 @@ nav ul {
     letter-spacing: 0.1em;
     text-transform: uppercase;
     margin-bottom: 16px;
-    color: var(--navy);
+    color: var(--white);
 }
 .hero h1 {
     font-size: clamp(2.5rem, 5vw, 4.4rem);
@@ -133,7 +133,7 @@ nav ul {
     color: var(--navy);
 }
 .hero .content .trav {
-    color: var(--navy);
+    color: var(--white);
 }
 .hero-actions {
     display: flex;

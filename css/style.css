@@ -112,6 +112,7 @@ nav ul {
     line-height: 1.05;
     margin: 0 0 16px;
     text-shadow: 0 8px 20px rgba(0,0,0,0.18);
+    color: var(--white);
 }
 .hero h1 span { color: var(--sky-soft); }
 .hero .trav {
@@ -404,7 +405,7 @@ nav ul {
 
 @media (max-width: 768px) {
     .hero { padding: 68px 16px 60px; }
-    .hero h1 { font-size: clamp(2rem, 7vw, 3rem); }
+    .hero h1 { font-size: clamp(2rem, 7vw, 3rem);color: var(--navy);}
     .services-grid,
     .deals-grid,
     .process-grid {

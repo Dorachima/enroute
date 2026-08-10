@@ -52,8 +52,8 @@ nav ul li a:hover, nav ul li a.active { color: var(--sky); }
     color: var(--white);
 }
 .about-hero-content { max-width: 800px; margin: 0 auto; }
-.about-hero .eyebrow { display: inline-block; padding: 8px 14px; border-radius: 999px; background: rgba(255,255,255,0.16); border: 1px solid rgba(255,255,255,0.24); font-size: 0.8rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 16px; }
-.about-hero h1 { font-size: clamp(2rem, 4vw, 2.8rem); margin: 0 0 12px; }
+.about-hero .eyebrow { display: inline-block; padding: 8px 14px; border-radius: 999px; background: rgba(255,255,255,0.16); border: 1px solid rgba(255,255,255,0.24); font-size: 0.8rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 16px; color: var(--white); }
+.about-hero h1 { font-size: clamp(2rem, 4vw, 2.8rem); margin: 0 0 12px;color: var(--white); }
 .about-hero p { margin: 0; font-size: 1.02rem; opacity: 0.95; }
 
 .about-shell { max-width: 1120px; margin: -24px auto 60px; padding: 0 24px; }
@@ -90,11 +90,13 @@ nav ul li a:hover, nav ul li a.active { color: var(--sky); }
  .final-cta .cta-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; }
  @media (max-width: 900px) {
      .about-intro, .mission-grid, .value-grid, .step-grid, .corporate-highlight { grid-template-columns: 1fr; }
- }
+    .about-hero .eyebrow{color: var(--navy);}
+    }
  @media (max-width: 768px) {
      .about-shell { margin: -24px auto 40px; padding: 0 16px; }
+     .about-hero .eyebrow{color: var(--navy);}
      .service-cards, .mission-grid, .value-grid, .step-grid, .corporate-highlight { grid-template-columns: 1fr; }
- }
+    }
 .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 24px; }
 .stat-card {
     background: var(--white);

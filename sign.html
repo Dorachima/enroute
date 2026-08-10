@@ -12,66 +12,98 @@
             <p class="tran"><img src="./images/log1.png" alt="" class="logo"></p>
             <div class="hamburger" id="hamburger">&#9776;</div>
           </div>
-          <nav class="new show" id="mobileMenu">
-            <ul>
-              <li><a href="index.html">HOME</a></li>
-              <li><a href="about.html">ABOUT US</a></li>
-              <li><a href="service.html">SERVICES</a></li>
-              <li><a href="testimonial.html">TESTIMONIALS</a></li>
-              <li><a href="login.html">LOGIN</a></li>
-              <li><a href="https://wa.me/2348135458426?text=Hello%2C%20my%20name%20is%20" target="_blank">CONTACT US</a></li>
-              <li><a href="ai.html">AI ASSISTANT</a></li>
-            </ul>
-          </nav>
+              <nav class="new show" id="mobileMenu">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+        <li><a href="service.html">SERVICES</a></li>
+        <li><a href="testimonial.html">TESTIMONIALS</a></li>
+        <li><a href="corporate.html">CORPORATE TRAVEL</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="login.html">LOGIN</a></li>
+        <li><a href="ai.html">AI ASSISTANT</a></li>
+      </ul>
+    </nav>
        </header>
-       <nav class="side-menu" id="sideMenu">
-          <div class="close-btn" id="closeBtn">&times;</div>
-          <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="about.html">ABOUT US</a></li>
-            <li><a href="service.html">SERVICES</a></li>
-            <li><a href="testimonial.html">TESTIMONIALS</a></li>
-            <li><a href="login.html">LOGIN</a></li>
-            <li><a href="https://wa.me/2348135458426">CONTACT US</a></li>
-            <li><a href="ai.html">AI ASSISTANT</a></li>
-          </ul>
-       </nav>
-       <section>
-         <form action="sign.php" method="post" name="loginForm">
-          <div class="sign">
-            <h1>SIGN UP</h1>
-            <select name="emptitle" id="emptitle">
-            <option value=""readonly>Select a title</option>
-            <option value="Mr">Mr</option>
-            <option value="Mrs">Mrs</option>
-            <option value="Miss">Miss</option>
-            <option value="Dr">Dr</option>
-            <option value="Prof">Prof</option>
-            </select>
-            <br>
-            <input type="text" placeholder="First name">
-            <br>
-            <input type="text" placeholder="Middle name">
-            <br>
-            <input type="text" placeholder="Last name">
-            <br>
-            <select name="gender" id="gender">
-            <option value=""readonly>Gender</option>
-            <option value="Mr">Male</option>
-            <option value="Mrs">Female</option>
-            <br>
-            <input type="email" name="" id="" placeholder="Email">
-            <br>
-            <input type="number" name="" id="" placeholder="Phone number">
-            <br>
-            <input type="password" name="" id="" placeholder="Password">
-            <br>
-            <input type="password" placeholder="Re-enter Password">
-            <br>
-            <button>Sign up</button>
-            <p>Have an account? <a href="login.html">Login here</a></p>
-          </div>
-         </form>  
+           <nav class="side-menu" id="sideMenu">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+        <li><a href="service.html">SERVICES</a></li>
+        <li><a href="testimonial.html">TESTIMONIALS</a></li>
+        <li><a href="corporate.html">CORPORATE TRAVEL</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="login.html">LOGIN</a></li>
+        <li><a href="ai.html">AI ASSISTANT</a></li>
+      </ul>
+    </nav>
+       <section class="signup-page">
+         <form action="sign.php" method="post" name="loginForm" class="signup-card">
+            <div class="signup-header">
+              <div class="eyebrow">Create Your Account</div>
+              <h1>Sign up for EnRoute</h1>
+              <p>Join EnRoute and start planning your travel with a professional booking experience.</p>
+            </div>
+            <div class="form-row split">
+              <div>
+                <label>Title</label>
+                <select name="emptitle" id="emptitle" required>
+                  <option value="">Select a title</option>
+                  <option value="Mr">Mr</option>
+                  <option value="Mrs">Mrs</option>
+                  <option value="Miss">Miss</option>
+                  <option value="Dr">Dr</option>
+                  <option value="Prof">Prof</option>
+                </select>
+              </div>
+              <div>
+                <label>Gender</label>
+                <select name="gender" id="gender" required>
+                  <option value="">Select gender</option>
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row split">
+              <div>
+                <label>First Name</label>
+                <input type="text" placeholder="First name" required>
+              </div>
+              <div>
+                <label>Middle Name</label>
+                <input type="text" placeholder="Middle name">
+              </div>
+            </div>
+            <div class="form-row">
+              <label>Last Name</label>
+              <input type="text" placeholder="Last name" required>
+            </div>
+            <div class="form-row">
+              <label>Email</label>
+              <input type="email" name="" id="" placeholder="Email" required>
+            </div>
+            <div class="form-row">
+              <label>Phone Number</label>
+              <input type="number" name="" id="" placeholder="Phone number" required>
+            </div>
+            <div class="form-row split">
+              <div>
+                <label>Password</label>
+                <input type="password" name="" id="" placeholder="Password" required>
+              </div>
+              <div>
+                <label>Re-enter Password</label>
+                <input type="password" placeholder="Confirm password" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <button class="btn btn-primary" type="submit">Sign Up</button>
+            </div>
+            <p class="helper">Have an account? <a href="login.html">Login here</a></p>
+          </form>  
         </section>
        <script>
          const hamburger =
@@ -90,3 +122,4 @@
        </script>
 </body>
 </html>
+

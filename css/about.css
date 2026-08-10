@@ -47,7 +47,8 @@ nav ul li a:hover, nav ul li a.active { color: var(--sky); }
 
 .about-hero {
     padding: 92px 24px 72px;
-    background: linear-gradient(120deg, rgba(7,26,77,0.9), rgba(58,160,255,0.46)), url('../images/air.avif') center/cover no-repeat;
+    background: linear-gradient(180deg, rgba(7,26,77,0.78), rgba(7,26,77,0.25)), url('../images/air.avif') center/cover no-repeat;
+    background-blend-mode: overlay;
     color: var(--white);
 }
 .about-hero-content { max-width: 800px; margin: 0 auto; }
@@ -56,6 +57,44 @@ nav ul li a:hover, nav ul li a.active { color: var(--sky); }
 .about-hero p { margin: 0; font-size: 1.02rem; opacity: 0.95; }
 
 .about-shell { max-width: 1120px; margin: -24px auto 60px; padding: 0 24px; }
+ .about-intro { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 28px; align-items: center; margin-bottom: 36px; }
+ .about-intro h2 { margin: 0 0 18px; color: var(--navy); font-size: clamp(2rem, 4vw, 3rem); }
+ .about-intro p { color: #4f6079; margin-bottom: 16px; }
+ .hero-card { border-radius: 28px; overflow: hidden; box-shadow: 0 18px 40px rgba(7, 26, 77, 0.12); }
+ .hero-card img { width: 100%; height: auto; display: block; }
+ .about-steps { margin-bottom: 40px; }
+ .about-steps h2 { color: var(--navy); margin-bottom: 12px; font-size: clamp(1.8rem, 3vw, 2.6rem); }
+ .about-steps p { max-width: 760px; color: #5f6b80; margin-bottom: 24px; }
+ .step-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; }
+ .step-card { background: var(--white); border-radius: 24px; padding: 24px; box-shadow: 0 18px 40px rgba(7, 26, 77, 0.08); border: 1px solid rgba(58,160,255,0.12); text-align: center; }
+ .step-card span { display: inline-flex; align-items: center; justify-content: center; width: 52px; height: 52px; border-radius: 18px; background: rgba(58, 160, 255, 0.12); font-size: 1.7rem; margin-bottom: 16px; }
+ .step-card strong { display: block; margin-bottom: 10px; color: var(--navy); }
+ .step-card p { color: #5f6b80; margin: 0; }
+ .service-cards { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; margin-bottom: 40px; }
+ .service-cards .service-card { padding: 28px; }
+ .service-cards .service-card h3 { margin: 14px 0 10px; }
+ .mission-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin-bottom: 40px; }
+ .mission-card, .vision-card { background: var(--white); border-radius: 24px; padding: 28px; box-shadow: 0 18px 40px rgba(7, 26, 77, 0.08); border: 1px solid rgba(58,160,255,0.12); }
+ .mission-card h2, .vision-card h2 { margin-bottom: 16px; }
+ .value-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; margin-bottom: 40px; }
+ .value-card { text-align: center; }
+ .value-card h3 { margin-bottom: 12px; }
+ .corporate-highlight { display: grid; grid-template-columns: 1.3fr 0.9fr; gap: 28px; margin-bottom: 40px; padding: 32px; background: linear-gradient(135deg, rgba(58,160,255,0.14), rgba(255,255,255,0.95)); border-radius: 28px; border: 1px solid rgba(58,160,255,0.14); box-shadow: 0 18px 40px rgba(7,26,77,0.08); }
+ .corporate-highlight h2 { margin-top: 0; }
+ .corporate-highlight p { color: #5f6b80; }
+ .corporate-highlight .btn-group { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 18px; }
+ .final-cta { margin-bottom: 60px; }
+ .final-cta .cta-card { background: linear-gradient(135deg, #daf0ff, #eef8ff); padding: 34px 28px; border-radius: 28px; text-align: center; box-shadow: 0 18px 40px rgba(7, 26, 77, 0.08); border: 1px solid rgba(58,160,255,0.16); }
+ .final-cta h2 { margin-bottom: 16px; }
+ .final-cta p { color: #4f6079; margin-bottom: 24px; }
+ .final-cta .cta-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; }
+ @media (max-width: 900px) {
+     .about-intro, .mission-grid, .value-grid, .step-grid, .corporate-highlight { grid-template-columns: 1fr; }
+ }
+ @media (max-width: 768px) {
+     .about-shell { margin: -24px auto 40px; padding: 0 16px; }
+     .service-cards, .mission-grid, .value-grid, .step-grid, .corporate-highlight { grid-template-columns: 1fr; }
+ }
 .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 24px; }
 .stat-card {
     background: var(--white);

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EnRoute | Contact</title>
+  <link rel="stylesheet" href="./css/shared.css">
+</head>
+<body>
+  <header>
+    <div class="header-top">
+      <p class="tran"><img src="./images/log1.png" alt="EnRoute logo" class="logo"></p>
+      <div class="hamburger" id="hamburger">&#9776;</div>
+    </div>
+        <nav class="new show" id="mobileMenu">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+        <li><a href="service.html">SERVICES</a></li>
+        <li><a href="testimonial.html">TESTIMONIALS</a></li>
+        <li><a href="corporate.html">CORPORATE TRAVEL</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a class="active" href="contact.html">CONTACT</a></li>
+        <li><a href="login.html">LOGIN</a></li>
+        <li><a href="ai.html">AI ASSISTANT</a></li>
+      </ul>
+    </nav>
+  </header>
+      <nav class="side-menu" id="sideMenu">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+        <li><a href="service.html">SERVICES</a></li>
+        <li><a href="testimonial.html">TESTIMONIALS</a></li>
+        <li><a href="corporate.html">CORPORATE TRAVEL</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a class="active" href="contact.html">CONTACT</a></li>
+        <li><a href="login.html">LOGIN</a></li>
+        <li><a href="ai.html">AI ASSISTANT</a></li>
+      </ul>
+    </nav>
+  <main class="page-main">
+    <section class="page-hero">
+      <div class="page-hero-content">
+        <span class="eyebrow">Contact EnRoute</span>
+        <h1>Let's Plan Your Journey Together</h1>
+        <p>Reach out by phone, WhatsApp, email or use the form below to send us a travel enquiry.</p>
+      </div>
+    </section>
+    <section class="section contact-grid">
+      <div class="contact-card">
+        <h2>Get in Touch</h2>
+        <div class="info-row">
+          <div><span>📞</span><p><strong>Phone:</strong><br>+234 813 545 8426</p></div>
+          <div><span>✉️</span><p><strong>Email:</strong><br><a href="mailto:Enroutebookingsng@gmail.com">Enroutebookingsng@gmail.com</a></p></div>
+          <div><span>💬</span><p><strong>WhatsApp:</strong><br><a href="https://wa.me/2348135458426" target="_blank">Chat on WhatsApp</a></p></div>
+          <div><span>🕒</span><p><strong>Business Hours:</strong><br>Mon - Sun, 08:00 - 20:00</p></div>
+          <div><span>📸</span><p><strong>Instagram:</strong><br>Connect with us for travel inspiration.</p></div>
+        </div>
+      </div>
+      <div class="form-card">
+        <h2>Send an Enquiry</h2>
+        <form action="" method="post" class="booking-form">
+          <div class="form-row split">
+            <div>
+              <label>Full Name</label>
+              <input type="text" placeholder="Your full name" required>
+            </div>
+            <div>
+              <label>Email</label>
+              <input type="email" placeholder="Your email" required>
+            </div>
+          </div>
+          <div class="form-row split">
+            <div>
+              <label>Phone Number</label>
+              <input type="text" placeholder="Your phone number" required>
+            </div>
+            <div>
+              <label>Service</label>
+              <select>
+                <option>Flight Booking</option>
+                <option>Hotel Booking</option>
+                <option>Car Rental</option>
+                <option>Airport Transfer</option>
+                <option>Corporate Travel</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <label>Message</label>
+            <textarea placeholder="Tell us your travel needs"></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Send Enquiry</button>
+        </form>
+        <div class="cta-actions" style="margin-top:24px; justify-content:flex-start;">
+          <a class="btn btn-secondary" href="https://wa.me/2348135458426" target="_blank">Chat on WhatsApp</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-block">
+        <h4>EnRoute</h4>
+        <p>Modern travel booking for buses, flights, stays and transfers.</p>
+      </div>
+      <div class="footer-block">
+        <h4>Quick Links</h4>
+        <div class="footer-links"><a href="index.html">Home</a><a href="about.html">About</a><a href="service.html">Services</a><a href="faq.html">FAQ</a></div>
+      </div>
+      <div class="footer-block">
+        <h4>Contact</h4>
+        <p>Email: Enroutebookingsng@gmail.com</p>
+        <p>Phone: +234 813 545 8426</p>
+        <div class="social-links">📱 WhatsApp</div>
+      </div>
+      <div class="footer-block">
+        <h4>Stay Connected</h4>
+        <p>Let EnRoute support every leg of your journey.</p>
+      </div>
+    </div>
+  </footer>
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const menu = document.getElementById('sideMenu');
+    const closeBtn = document.getElementById('closeBtn');
+    hamburger.addEventListener('click', () => menu.classList.toggle('show'));
+    closeBtn.addEventListener('click', () => menu.classList.remove('show'));
+  </script>
+</body>
+</html>
+
+

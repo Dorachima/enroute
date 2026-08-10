@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EnRoute | Hotel & Short-Stay Booking</title>
+  <link rel="stylesheet" href="./css/shared.css">
+</head>
+<body>
+  <header>
+    <div class="header-top">
+      <p class="tran"><img src="./images/log1.png" alt="EnRoute logo" class="logo"></p>
+      <div class="hamburger" id="hamburger">&#9776;</div>
+    </div>
+        <nav class="new show" id="mobileMenu">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+        <li><a href="service.html">SERVICES</a></li>
+        <li><a href="testimonial.html">TESTIMONIALS</a></li>
+        <li><a href="corporate.html">CORPORATE TRAVEL</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="login.html">LOGIN</a></li>
+        <li><a href="ai.html">AI ASSISTANT</a></li>
+      </ul>
+    </nav>
+  </header>
+      <nav class="side-menu" id="sideMenu">
+      <div class="close-btn" id="closeBtn">×</div>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+        <li><a href="service.html">SERVICES</a></li>
+        <li><a href="testimonial.html">TESTIMONIALS</a></li>
+        <li><a href="corporate.html">CORPORATE TRAVEL</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="login.html">LOGIN</a></li>
+        <li><a href="ai.html">AI ASSISTANT</a></li>
+      </ul>
+    </nav>
+  <main class="page-main">
+    <section class="page-hero">
+      <div class="page-hero-content">
+        <span class="eyebrow">Hotels & Short-Stay</span>
+        <h1>Find the perfect place to stay for your next trip.</h1>
+        <p>Submit your accommodation request and our team will help you secure hotels or short-stay apartments that suit your schedule and budget.</p>
+      </div>
+    </section>
+    <section class="form-section">
+      <div class="form-card">
+        <h2>Hotel Booking Request</h2>
+        <p class="section-subtitle">Ready for a comfortable stay? Tell us your travel plans and we’ll follow up with options.</p>
+        <form action="" method="post" class="booking-form">
+          <div class="form-row">
+            <label>Destination</label>
+            <input type="text" placeholder="City, hotel or area" required>
+          </div>
+          <div class="form-row split">
+            <div>
+              <label>Check-in Date</label>
+              <input type="date" required>
+            </div>
+            <div>
+              <label>Check-out Date</label>
+              <input type="date" required>
+            </div>
+          </div>
+          <div class="form-row split">
+            <div>
+              <label>Guests</label>
+              <select>
+                <option>1 guest</option>
+                <option>2 guests</option>
+                <option>3 guests</option>
+                <option>4+ guests</option>
+              </select>
+            </div>
+            <div>
+              <label>Rooms</label>
+              <select>
+                <option>1 room</option>
+                <option>2 rooms</option>
+                <option>3 rooms</option>
+                <option>4+ rooms</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row split">
+            <div>
+              <label>Accommodation Type</label>
+              <select>
+                <option>Hotel</option>
+                <option>Short-stay apartment</option>
+                <option>Guesthouse</option>
+                <option>Serviced apartment</option>
+              </select>
+            </div>
+            <div>
+              <label>Hotel Category</label>
+              <select>
+                <option>3-star</option>
+                <option>4-star</option>
+                <option>5-star</option>
+                <option>Budget-friendly</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <label>Special Requests</label>
+            <textarea placeholder="Any preferences or requirements"></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Submit Hotel Request</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-block">
+        <h4>EnRoute</h4>
+        <p>Modern travel booking for buses, flights, stays and transfers.</p>
+      </div>
+      <div class="footer-block">
+        <h4>Quick Links</h4>
+        <div class="footer-links"><a href="index.html">Home</a><a href="about.html">About</a><a href="service.html">Services</a><a href="faq.html">FAQ</a></div>
+      </div>
+      <div class="footer-block">
+        <h4>Contact</h4>
+        <p>Email: Enroutebookingsng@gmail.com</p>
+        <p>Phone: +234 813 545 8426</p>
+        <div class="social-links">📱 WhatsApp</div>
+      </div>
+      <div class="footer-block">
+        <h4>Stay Connected</h4>
+        <p>Let EnRoute support every leg of your journey.</p>
+      </div>
+    </div>
+  </footer>
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const menu = document.getElementById('sideMenu');
+    const closeBtn = document.getElementById('closeBtn');
+    if (hamburger && menu) {
+      hamburger.addEventListener('click', () => menu.classList.toggle('show'));
+    }
+    if (closeBtn && menu) {
+      closeBtn.addEventListener('click', () => menu.classList.remove('show'));
+    }
+  </script>
+</body>
+</html>
+
+

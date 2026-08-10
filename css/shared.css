@@ -205,6 +205,356 @@ header {
   border: 1px solid rgba(58, 160, 255, 0.28);
 }
 
+.section {
+  padding: 72px 24px;
+}
+
+.section-header {
+  max-width: 900px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.section-header h2 {
+  margin: 12px auto 16px;
+  font-size: clamp(1.9rem, 3vw, 2.8rem);
+}
+
+.section-header p {
+  max-width: 760px;
+  margin: 0 auto;
+  color: var(--muted);
+}
+
+.page-main {
+  padding-bottom: 60px;
+}
+
+.page-hero {
+  min-height: 52vh;
+  display: flex;
+  align-items: center;
+  padding: 72px 24px;
+  background: linear-gradient(180deg, rgba(7,26,77,0.92), rgba(58,160,255,0.24)), url('../images/air.avif') center/cover no-repeat;
+  background-blend-mode: overlay;
+  color: var(--white);
+}
+
+.page-hero-content {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.page-hero .eyebrow,
+.hero .eyebrow,
+.about-hero .eyebrow,
+.testimonial-hero .eyebrow {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.16);
+  border: 1px solid rgba(255,255,255,0.24);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.page-hero h1,
+.hero h1,
+.about-hero h1,
+.testimonial-hero h1 {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  margin: 0 0 16px;
+}
+
+.page-hero p,
+.hero .trav,
+.about-hero p,
+.testimonial-hero p {
+  color: rgba(255,255,255,0.92);
+  max-width: 680px;
+}
+
+.site-footer {
+  margin-top: 20px;
+  padding: 56px 24px 36px;
+  background: linear-gradient(135deg, var(--navy-deep), var(--navy));
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.footer-grid {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.footer-block h4 {
+  margin-bottom: 10px;
+  color: var(--white);
+}
+
+.footer-block p,
+.footer-block a {
+  color: rgba(255, 255, 255, 0.86);
+  margin: 0 0 8px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.back-top {
+  display: inline-flex;
+  margin-top: 8px;
+  color: var(--sky-soft);
+  font-weight: 700;
+}
+
+.service-grid,
+.faq-list,
+.contact-grid,
+.deals-grid,
+.process-grid,
+.services-grid,
+.benefit-grid {
+  display: grid;
+  gap: 24px;
+}
+
+.service-card,
+.deal-card,
+.process-step,
+.benefit-card,
+.faq-card,
+.contact-card,
+.form-card,
+.cta-card {
+  background: var(--white);
+  border-radius: 24px;
+  box-shadow: 0 18px 40px rgba(7, 26, 77, 0.08);
+  border: 1px solid rgba(58, 160, 255, 0.12);
+  padding: 28px;
+}
+
+.service-card:hover,
+.deal-card:hover,
+.process-step:hover,
+.benefit-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 22px 48px rgba(7, 26, 77, 0.12);
+}
+
+.service-card,
+.deal-card,
+.process-step,
+.benefit-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.service-card h3,
+.deal-card h3,
+.process-step h3,
+.benefit-card h3,
+.faq-card h3,
+.contact-card h3,
+.form-card h3 {
+  margin: 0 0 14px;
+  color: var(--navy);
+}
+
+.service-card p,
+.deal-card p,
+.process-step p,
+.benefit-card p,
+.faq-card p,
+.contact-card p,
+.form-card p {
+  margin: 0 0 20px;
+  color: var(--text);
+  line-height: 1.7;
+}
+
+.service-icon,
+.step-number,
+.benefit-card .icon {
+  width: 56px;
+  height: 56px;
+  display: grid;
+  place-items: center;
+  border-radius: 18px;
+  background: rgba(58, 160, 255, 0.14);
+  font-size: 1.35rem;
+  color: var(--sky);
+}
+
+.service-card .service-icon {
+  margin-bottom: 20px;
+}
+
+.process-step {
+  text-align: center;
+  padding: 32px 24px;
+}
+
+.process-step .step-number {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 18px;
+  background: linear-gradient(135deg, var(--sky), var(--navy));
+  color: var(--white);
+}
+
+.cta-card {
+  text-align: center;
+  padding: 40px 30px;
+}
+
+.cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.deal-tag {
+  display: inline-flex;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(58,160,255,0.14);
+  color: var(--sky);
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.faq-list {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.faq-card {
+  padding: 0;
+  border: none;
+  box-shadow: none;
+}
+
+.faq-card details {
+  background: var(--white);
+  border-radius: 22px;
+  padding: 22px 24px;
+  box-shadow: 0 16px 38px rgba(7,26,77,0.08);
+  border: 1px solid rgba(58,160,255,0.12);
+}
+
+.faq-card summary {
+  list-style: none;
+  cursor: pointer;
+  font-size: 1.04rem;
+  font-weight: 700;
+  color: var(--navy);
+  padding: 0;
+}
+
+.faq-card summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-card summary::after {
+  content: '+';
+  float: right;
+  font-size: 1.4rem;
+  line-height: 1;
+  color: var(--sky);
+  transition: transform 0.2s ease;
+}
+
+.faq-card details[open] summary::after {
+  transform: rotate(45deg);
+}
+
+.faq-card .answer {
+  margin-top: 16px;
+  color: var(--text);
+  line-height: 1.75;
+}
+
+.contact-grid {
+  grid-template-columns: 1fr 1.2fr;
+  max-width: 1120px;
+  margin: 0 auto;
+  align-items: start;
+}
+
+.contact-card,
+.form-card {
+  width: 100%;
+}
+
+.contact-card p,
+.contact-card a {
+  color: var(--text);
+}
+
+.contact-card a {
+  font-weight: 700;
+}
+
+.contact-card .info-row {
+  display: grid;
+  gap: 14px;
+}
+
+.contact-card .info-row div {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.contact-card .info-row div span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 14px;
+  background: rgba(58, 160, 255, 0.14);
+  color: var(--sky);
+}
+
+@media (max-width: 1024px) {
+  .service-grid,
+  .deals-grid,
+  .process-grid,
+  .contact-grid,
+  .faq-list,
+  .services-grid {
+      grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .section { padding: 56px 18px; }
+  .page-hero { padding: 68px 18px; }
+  .contact-grid { grid-template-columns: 1fr; }
+  .cta-card { padding: 32px 22px; }
+  .cta-actions { flex-direction: column; align-items: stretch; }
+  .footer-grid { grid-template-columns: 1fr; }
+}
+
 .card,
 .glass-card {
   background: rgba(255, 255, 255, 0.9);

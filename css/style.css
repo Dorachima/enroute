@@ -9,8 +9,14 @@
 }
 
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    overflow-x: hidden;
+}
 body {
+    min-width: 0;
     margin: 0;
     font-family: "Segoe UI", Arial, sans-serif;
     color: var(--text);
@@ -24,7 +30,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background: rgba(255, 255, 255, 0.78);
+    background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(16px);
     border-bottom: 1px solid rgba(7, 26, 77, 0.08);
     box-shadow: 0 10px 30px rgba(7, 26, 77, 0.08);
@@ -33,7 +39,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px 24px;
+    padding: 12px 18px;
+    max-width: 1240px;
+    margin: 0 auto;
+    width: 100%;
 }
 img.logo { height: 78px; width: auto; object-fit: contain; }
 nav.new { display: flex; align-items: center; padding-right: 24px; }
@@ -51,14 +60,11 @@ nav ul {
     display: none;
     font-size: 30px;
     cursor: pointer;
-    color: var(--white);
-    text-shadow: 0 18px 30px rgba(0,0,0,0.28);
+    color: var(--navy);
     z-index: 1001;
-    position: fixed;
-    top: 20px;
-    right: 20px;
+    position: relative;
     border: none;
-    color: rgba(255,255,255,0.92);
+    background: transparent;
 }
 .side-menu {
     position: fixed;
@@ -91,7 +97,7 @@ nav ul {
 }
 .content {
     max-width: 700px;
-    color: var(--white);
+    color: var(--navy);
     animation: fadeUp 0.9s ease both;
 }
 .eyebrow {
@@ -105,23 +111,36 @@ nav ul {
     letter-spacing: 0.1em;
     text-transform: uppercase;
     margin-bottom: 16px;
+    color: var(--navy);
 }
 .hero h1 {
     font-size: clamp(2.5rem, 5vw, 4.4rem);
     font-weight: 800;
     line-height: 1.05;
     margin: 0 0 16px;
-    text-shadow: 0 8px 20px rgba(0,0,0,0.18);
-    color: var(--white);
+    text-shadow: none;
+    color: var(--navy);
+}
+.hero .content h1 {
+    color: var(--navy);
 }
 .hero h1 span { color: var(--sky-soft); }
 .hero .trav {
     font-size: 1.08rem;
     max-width: 560px;
-    opacity: 0.95;
+    opacity: 1;
     margin-bottom: 24px;
+    color: var(--navy);
 }
-.hero-actions { display: flex; flex-wrap: wrap; gap: 14px; }
+.hero .content .trav {
+    color: var(--navy);
+}
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    justify-content: center;
+}
 .btn {
     display: inline-flex;
     align-items: center;
@@ -404,8 +423,11 @@ nav ul {
 }
 
 @media (max-width: 768px) {
-    .hero { padding: 68px 16px 60px; }
-    .hero h1 { font-size: clamp(2rem, 7vw, 3rem);color: var(--navy);}
+    .hero { padding: 72px 16px 56px; }
+    .hero h1 { font-size: clamp(2rem, 7vw, 3rem); color: var(--navy); }
+    .hero .trav { max-width: 100%; }
+    .hero-actions { justify-content: center; }
+    .hero-actions .btn { flex: 1 1 100%; min-width: 160px; }
     .services-grid,
     .deals-grid,
     .process-grid {

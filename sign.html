@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>EnRoute | Sign Up</title>
+    <link rel="stylesheet" href="./css/shared.css">
     <link rel="stylesheet" href="./css/sign.css">
 </head>
 <body>
@@ -27,6 +28,7 @@
     </nav>
        </header>
            <nav class="side-menu" id="sideMenu">
+        <div class="close-btn" id="closeBtn">×</div>
       <ul>
         <li><a href="index.html">HOME</a></li>
         <li><a href="about.html">ABOUT US</a></li>
@@ -43,8 +45,8 @@
          <form action="sign.php" method="post" name="loginForm" class="signup-card">
             <div class="signup-header">
               <div class="eyebrow">Create Your Account</div>
-              <h1>Sign up for EnRoute</h1>
-              <p>Join EnRoute and start planning your travel with a professional booking experience.</p>
+              <h1>Create Your EnRoute Account</h1>
+              <p>Create an account to manage your trips, bookings and travel requests in one place.</p>
             </div>
             <div class="form-row split">
               <div>
@@ -102,23 +104,19 @@
             <div class="form-row">
               <button class="btn btn-primary" type="submit">Sign Up</button>
             </div>
-            <p class="helper">Have an account? <a href="login.html">Login here</a></p>
+            <p class="helper">Already have an account? <a href="login.html">Login here</a></p>
           </form>  
         </section>
        <script>
-         const hamburger =
-         document.getElementById("hamburger");
-         const menu = 
-         document.getElementById("sideMenu");
-         const closeBtn = 
-         document.getElementById("closeBtn");
-          hamburger.addEventListener("click",()=> {
-            menu.classList.toggle("show");
-          });
-          closeBtn.addEventListener("click",()=>{
-            sideMenu.classList.remove("show");
-          });
-
+         const hamburger = document.getElementById("hamburger");
+         const menu = document.getElementById("sideMenu");
+         const closeBtn = document.getElementById("closeBtn");
+         if (hamburger && menu) {
+             hamburger.addEventListener("click", () => menu.classList.toggle("show"));
+         }
+         if (closeBtn && menu) {
+             closeBtn.addEventListener("click", () => menu.classList.remove("show"));
+         }
        </script>
 </body>
 </html>

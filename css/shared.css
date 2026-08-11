@@ -544,6 +544,9 @@ header {
   .services-grid {
       grid-template-columns: 1fr;
   }
+  .page-hero .eyebrow{
+    color: var(--navy);
+  }
 }
 
 @media (max-width: 768px) {
@@ -553,6 +556,9 @@ header {
   .cta-card { padding: 32px 22px; }
   .cta-actions { flex-direction: column; align-items: stretch; }
   .footer-grid { grid-template-columns: 1fr; }
+  .page-hero .eyebrow{
+    color: var(--navy);
+  }
 }
 
 .card,
@@ -717,6 +723,9 @@ textarea::placeholder { color: var(--muted); }
   .new ul { gap: 0.3rem; }
   .site-nav__link,
   .new ul li a { font-size: 0.78rem; padding: 0.44rem 0.56rem; }
+  .page-hero .eyebrow{
+    color: var(--navy);
+  }
 }
 
 @media (max-width: 768px) {
@@ -729,4 +738,7 @@ textarea::placeholder { color: var(--muted); }
   .trip-form .field-grid { grid-template-columns: 1fr; }
   .toogle-buttons { grid-template-columns: 1fr; }
   .form-box { padding: 20px; border-radius: 24px; }
+  .page-hero .eyebrow{
+    color: var(--navy);
+  }
 }

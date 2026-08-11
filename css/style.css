@@ -152,9 +152,9 @@ nav ul {
 }
 .btn:hover { transform: translateY(-2px); }
 .btn-primary {
-    background: linear-gradient(135deg, var(--accent), #ffb347);
+    background: linear-gradient(135deg, var(--navy));
     color: var(--white);
-    box-shadow: 0 12px 28px rgba(255, 159, 28, 0.25);
+    /* box-shadow: 0 12px 28px rgba(255, 159, 28, 0.25); */
 }
 .btn-secondary {
     background: rgba(255,255,255,0.14);
@@ -424,7 +424,9 @@ nav ul {
 
 @media (max-width: 768px) {
     .hero { padding: 72px 16px 56px; }
-    .hero h1 { font-size: clamp(2rem, 7vw, 3rem); color: var(--navy); }
+    .hero h1 { font-size: clamp(2rem, 7vw, 3rem); color: var(--navy);}
+    .hero p{color: var(--navy);}
+    .eyebrow {color: var(--navy)}
     .hero .trav { max-width: 100%; }
     .hero-actions { justify-content: center; }
     .hero-actions .btn { flex: 1 1 100%; min-width: 160px; }

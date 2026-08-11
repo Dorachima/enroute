@@ -103,7 +103,7 @@ nav ul li a:hover, nav ul li a.active { color: var(--sky); }
      }
  }
  @media (max-width: 768px) {
-     .about-shell { margin: 40px auto 40px; padding: 0 16px; }
+     .about-shell { margin: 56px auto 40px; padding: 8px 16px 0; }
      .about-hero {
          padding: 48px 18px 42px;
      }

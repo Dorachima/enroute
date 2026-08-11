@@ -430,7 +430,7 @@ nav ul {
     .hero h1 { font-size: clamp(2rem, 7vw, 3rem); color: var(--navy);}
     .hero p{color: var(--navy);}
     .eyebrow {color: var(--navy)}
-    .hero .trav { max-width: 100%; }
+    .hero .trav { max-width: 100%;color: var(--navy); }
     .hero-actions { justify-content: center; }
     .hero-actions .btn { flex: 1 1 100%; min-width: 160px; }
     .services-grid,
@@ -499,7 +499,7 @@ nav ul {
     .feature-strip { grid-template-columns: repeat(2, 1fr); }
     .footer-grid { grid-template-columns: repeat(2, 1fr); }
     .hero h1 { font-size: clamp(2rem, 7vw, 3rem); color: var(--navy);}
-    .hero p{color: var(--navy);}
+    .hero .trav { max-width: 100%;color: var(--navy); }
     .eyebrow {color: var(--navy)}
 }
 
@@ -511,6 +511,6 @@ nav ul {
     .feature-strip { grid-template-columns: 1fr; margin-top: -20px; }
     .footer-grid { grid-template-columns: 1fr; }
     .hero h1 { font-size: clamp(2rem, 7vw, 3rem); color: var(--navy);}
-    .hero p{color: var(--navy);}
+    .hero .trav { max-width: 100%;color: var(--navy); }
     .eyebrow {color: var(--navy)}
 }

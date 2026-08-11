@@ -420,6 +420,9 @@ nav ul {
     .why-section .benefit-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
+    .hero h1 { font-size: clamp(2rem, 7vw, 3rem); color: var(--navy);}
+    .hero p{color: var(--navy);}
+    .eyebrow {color: var(--navy)}
 }
 
 @media (max-width: 768px) {
@@ -495,6 +498,9 @@ nav ul {
 @media (max-width: 900px) {
     .feature-strip { grid-template-columns: repeat(2, 1fr); }
     .footer-grid { grid-template-columns: repeat(2, 1fr); }
+    .hero h1 { font-size: clamp(2rem, 7vw, 3rem); color: var(--navy);}
+    .hero p{color: var(--navy);}
+    .eyebrow {color: var(--navy)}
 }
 
 @media (max-width: 768px) {
@@ -504,4 +510,7 @@ nav ul {
     .hero { min-height: 85vh; padding: 90px 16px 50px; }
     .feature-strip { grid-template-columns: 1fr; margin-top: -20px; }
     .footer-grid { grid-template-columns: 1fr; }
+    .hero h1 { font-size: clamp(2rem, 7vw, 3rem); color: var(--navy);}
+    .hero p{color: var(--navy);}
+    .eyebrow {color: var(--navy)}
 }
